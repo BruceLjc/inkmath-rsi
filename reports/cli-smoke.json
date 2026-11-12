@@ -1,0 +1,399 @@
+{
+  "task_id": "cli",
+  "revision": 0,
+  "latex": "\\int_{t}^{h} t d f",
+  "status": "candidate",
+  "uncertain_symbols": [],
+  "tree": {
+    "kind": "row",
+    "label": "",
+    "box": [
+      11016.0,
+      2828.0,
+      13939.0,
+      6735.0
+    ],
+    "stroke_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "score": 0.9343,
+    "children": [
+      {
+        "kind": "row",
+        "label": "",
+        "box": [
+          11016.0,
+          2828.0,
+          13939.0,
+          6735.0
+        ],
+        "stroke_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score": 0.9343,
+        "children": [
+          {
+            "kind": "subsup",
+            "label": "",
+            "box": [
+              11016.0,
+              2828.0,
+              11802.0,
+              6735.0
+            ],
+            "stroke_ids": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score": 0.9744,
+            "children": [
+              {
+                "kind": "symbol",
+                "label": "\\int",
+                "box": [
+                  11016.0,
+                  3683.0,
+                  11802.0,
+                  5780.0
+                ],
+                "stroke_ids": [
+                  0
+                ],
+                "score": 0.9984,
+                "children": []
+              },
+              {
+                "kind": "row",
+                "label": "",
+                "box": [
+                  11060.0,
+                  6122.0,
+                  11475.0,
+                  6735.0
+                ],
+                "stroke_ids": [
+                  1,
+                  2
+                ],
+                "score": 0.9744,
+                "children": [
+                  {
+                    "kind": "symbol",
+                    "label": "t",
+                    "box": [
+                      11060.0,
+                      6122.0,
+                      11475.0,
+                      6735.0
+                    ],
+                    "stroke_ids": [
+                      1,
+                      2
+                    ],
+                    "score": 0.9744,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "kind": "row",
+                "label": "",
+                "box": [
+                  11444.0,
+                  2828.0,
+                  11732.0,
+                  3478.0
+                ],
+                "stroke_ids": [
+                  3
+                ],
+                "score": 0.9778,
+                "children": [
+                  {
+                    "kind": "symbol",
+                    "label": "h",
+                    "box": [
+                      11444.0,
+                      2828.0,
+                      11732.0,
+                      3478.0
+                    ],
+                    "stroke_ids": [
+                      3
+                    ],
+                    "score": 0.9778,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "row",
+            "label": "",
+            "box": [
+              12175.0,
+              4131.0,
+              13939.0,
+              5338.0
+            ],
+            "stroke_ids": [
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "score": 0.9343,
+            "children": [
+              {
+                "kind": "row",
+                "label": "",
+                "box": [
+                  12175.0,
+                  4131.0,
+                  13939.0,
+                  5338.0
+                ],
+                "stroke_ids": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "score": 0.9343,
+                "children": [
+                  {
+                    "kind": "symbol",
+                    "label": "t",
+                    "box": [
+                      12175.0,
+                      4220.0,
+                      12522.0,
+                      4859.0
+                    ],
+                    "stroke_ids": [
+                      4,
+                      5
+                    ],
+                    "score": 0.9695,
+                    "children": []
+                  },
+                  {
+                    "kind": "row",
+                    "label": "",
+                    "box": [
+                      12816.0,
+                      4131.0,
+                      13939.0,
+                      5338.0
+                    ],
+                    "stroke_ids": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "score": 0.9343,
+                    "children": [
+                      {
+                        "kind": "row",
+                        "label": "",
+                        "box": [
+                          12816.0,
+                          4131.0,
+                          13939.0,
+                          5338.0
+                        ],
+                        "stroke_ids": [
+                          6,
+                          7,
+                          8
+                        ],
+                        "score": 0.9343,
+                        "children": [
+                          {
+                            "kind": "symbol",
+                            "label": "d",
+                            "box": [
+                              12816.0,
+                              4327.0,
+                              13222.0,
+                              4982.0
+                            ],
+                            "stroke_ids": [
+                              6
+                            ],
+                            "score": 0.9941,
+                            "children": []
+                          },
+                          {
+                            "kind": "row",
+                            "label": "",
+                            "box": [
+                              13485.0,
+                              4131.0,
+                              13939.0,
+                              5338.0
+                            ],
+                            "stroke_ids": [
+                              7,
+                              8
+                            ],
+                            "score": 0.9343,
+                            "children": [
+                              {
+                                "kind": "symbol",
+                                "label": "f",
+                                "box": [
+                                  13485.0,
+                                  4131.0,
+                                  13939.0,
+                                  5338.0
+                                ],
+                                "stroke_ids": [
+                                  7,
+                                  8
+                                ],
+                                "score": 0.9343,
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "symbols": [
+    {
+      "kind": "symbol",
+      "label": "\\int",
+      "box": [
+        11016.0,
+        3683.0,
+        11802.0,
+        5780.0
+      ],
+      "stroke_ids": [
+        0
+      ],
+      "score": 0.9984,
+      "children": []
+    },
+    {
+      "kind": "symbol",
+      "label": "t",
+      "box": [
+        11060.0,
+        6122.0,
+        11475.0,
+        6735.0
+      ],
+      "stroke_ids": [
+        1,
+        2
+      ],
+      "score": 0.9744,
+      "children": []
+    },
+    {
+      "kind": "symbol",
+      "label": "h",
+      "box": [
+        11444.0,
+        2828.0,
+        11732.0,
+        3478.0
+      ],
+      "stroke_ids": [
+        3
+      ],
+      "score": 0.9778,
+      "children": []
+    },
+    {
+      "kind": "symbol",
+      "label": "t",
+      "box": [
+        12175.0,
+        4220.0,
+        12522.0,
+        4859.0
+      ],
+      "stroke_ids": [
+        4,
+        5
+      ],
+      "score": 0.9695,
+      "children": []
+    },
+    {
+      "kind": "symbol",
+      "label": "d",
+      "box": [
+        12816.0,
+        4327.0,
+        13222.0,
+        4982.0
+      ],
+      "stroke_ids": [
+        6
+      ],
+      "score": 0.9941,
+      "children": []
+    },
+    {
+      "kind": "symbol",
+      "label": "f",
+      "box": [
+        13485.0,
+        4131.0,
+        13939.0,
+        5338.0
+      ],
+      "stroke_ids": [
+        7,
+        8
+      ],
+      "score": 0.9343,
+      "children": []
+    }
+  ],
+  "timing_ms": {
+    "total": 113.252,
+    "candidate_and_model": 25.151
+  },
+  "within_1s": true,
+  "model": "v2",
+  "candidate_count": 60,
+  "warnings": [
+    "实验模型输出需核对；分组、布局和置信分数尚未校准。"
+  ],
+  "cold_load_and_recognition_ms": 124.999
+}

@@ -1,0 +1,13 @@
+{
+  "method": "each category first row; no correctness filtering",
+  "ids": [
+    "CROHME_full_v2/CROHME2013_data/TrainINKML/expressmatch/127_jorge.inkml",
+    "CROHME_full_v2/CROHME2013_data/TrainINKML/expressmatch/76_jorge.inkml",
+    "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/TrainData2_0_sub_51.inkml",
+    "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/KME2G3_0_sub_81.inkml",
+    "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire032-equation014.inkml",
+    "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire012-equation047.inkml",
+    "CROHME_full_v2/CROHME2013_data/TrainINKML/MfrDB/MfrDB1436.inkml",
+    "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire012-equation008.inkml"
+  ]
+}

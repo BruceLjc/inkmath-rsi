@@ -1,0 +1,61 @@
+{
+  "split_counts": {
+    "train": 5605,
+    "test": 353,
+    "val": 1288
+  },
+  "unique_fingerprints": 7246,
+  "disjoint_group_count": 162,
+  "hard_negatives_train_only": true,
+  "example_coverage": [
+    {
+      "example": "basic.json",
+      "coverage_exact": true,
+      "example_exact": true,
+      "candidate_count": 72
+    },
+    {
+      "example": "fraction.json",
+      "coverage_exact": true,
+      "example_exact": true,
+      "candidate_count": 120
+    },
+    {
+      "example": "function.json",
+      "coverage_exact": true,
+      "example_exact": true,
+      "candidate_count": 120
+    },
+    {
+      "example": "integral-complex.json",
+      "coverage_exact": true,
+      "example_exact": true,
+      "candidate_count": 111
+    },
+    {
+      "example": "integral.json",
+      "coverage_exact": true,
+      "example_exact": true,
+      "candidate_count": 60
+    },
+    {
+      "example": "limit.json",
+      "coverage_exact": true,
+      "example_exact": true,
+      "candidate_count": 163
+    },
+    {
+      "example": "root.json",
+      "coverage_exact": true,
+      "example_exact": true,
+      "candidate_count": 23
+    },
+    {
+      "example": "sum.json",
+      "coverage_exact": true,
+      "example_exact": true,
+      "candidate_count": 286
+    }
+  ],
+  "source_files_have_chinese_responsibility": true
+}

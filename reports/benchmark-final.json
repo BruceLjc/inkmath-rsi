@@ -1,0 +1,98 @@
+{
+  "checkpoint": null,
+  "model": "v4",
+  "model_load_warmup_ms": 5.9781670570373535,
+  "full_cli_process_ms": 1130.7989582419395,
+  "cli_exit_code": 0,
+  "stress_is_not_accuracy_test": true,
+  "cases": [
+    {
+      "case": "real_integral",
+      "strokes": 9,
+      "points": 306,
+      "runs": 8,
+      "p50_ms": 25.9715,
+      "p99_ms": 68.15227999999999,
+      "max_ms": 71.274,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_32_sparse",
+      "strokes": 32,
+      "points": 2560,
+      "runs": 8,
+      "p50_ms": 115.0205,
+      "p99_ms": 121.75782,
+      "max_ms": 121.847,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_32_overlap",
+      "strokes": 32,
+      "points": 2560,
+      "runs": 8,
+      "p50_ms": 300.77049999999997,
+      "p99_ms": 489.48841,
+      "max_ms": 500.985,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_64_sparse",
+      "strokes": 64,
+      "points": 5120,
+      "runs": 8,
+      "p50_ms": 251.0195,
+      "p99_ms": 266.49539000000004,
+      "max_ms": 267.302,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_64_overlap",
+      "strokes": 64,
+      "points": 5120,
+      "runs": 8,
+      "p50_ms": 633.379,
+      "p99_ms": 671.77112,
+      "max_ms": 674.423,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_128_sparse",
+      "strokes": 128,
+      "points": 12000,
+      "runs": 8,
+      "p50_ms": 544.5585,
+      "p99_ms": 572.13996,
+      "max_ms": 572.432,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_128_overlap",
+      "strokes": 128,
+      "points": 12000,
+      "runs": 8,
+      "p50_ms": 807.8575000000001,
+      "p99_ms": 828.88189,
+      "max_ms": 829.265,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_1_dense_sampling",
+      "strokes": 1,
+      "points": 12000,
+      "runs": 8,
+      "p50_ms": 11.619,
+      "p99_ms": 25.825549999999996,
+      "max_ms": 26.787,
+      "over_1s": 0,
+      "errors": []
+    }
+  ]
+}

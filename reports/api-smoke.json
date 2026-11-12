@@ -1,0 +1,434 @@
+{
+  "health": {
+    "status": "ready",
+    "model": "v4",
+    "parameters": 300298,
+    "input": "stroke coordinates",
+    "max_strokes": 128,
+    "max_points": 12000,
+    "accuracy_guaranteed": false
+  },
+  "recognition": {
+    "task_id": "smoke-integral",
+    "revision": 7,
+    "latex": "\\int_{t}^{h} t d f",
+    "status": "candidate",
+    "uncertain_symbols": [],
+    "tree": {
+      "kind": "row",
+      "label": "",
+      "box": [
+        11016.0,
+        2828.0,
+        13939.0,
+        6735.0
+      ],
+      "stroke_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "score": 0.7386,
+      "children": [
+        {
+          "kind": "row",
+          "label": "",
+          "box": [
+            11016.0,
+            2828.0,
+            13939.0,
+            6735.0
+          ],
+          "stroke_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "score": 0.7386,
+          "children": [
+            {
+              "kind": "subsup",
+              "label": "",
+              "box": [
+                11016.0,
+                2828.0,
+                11802.0,
+                6735.0
+              ],
+              "stroke_ids": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "score": 0.903,
+              "children": [
+                {
+                  "kind": "symbol",
+                  "label": "\\int",
+                  "box": [
+                    11016.0,
+                    3683.0,
+                    11802.0,
+                    5780.0
+                  ],
+                  "stroke_ids": [
+                    0
+                  ],
+                  "score": 0.9996,
+                  "children": []
+                },
+                {
+                  "kind": "row",
+                  "label": "",
+                  "box": [
+                    11060.0,
+                    6122.0,
+                    11475.0,
+                    6735.0
+                  ],
+                  "stroke_ids": [
+                    1,
+                    2
+                  ],
+                  "score": 0.903,
+                  "children": [
+                    {
+                      "kind": "symbol",
+                      "label": "t",
+                      "box": [
+                        11060.0,
+                        6122.0,
+                        11475.0,
+                        6735.0
+                      ],
+                      "stroke_ids": [
+                        1,
+                        2
+                      ],
+                      "score": 0.903,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "kind": "row",
+                  "label": "",
+                  "box": [
+                    11444.0,
+                    2828.0,
+                    11732.0,
+                    3478.0
+                  ],
+                  "stroke_ids": [
+                    3
+                  ],
+                  "score": 0.9983,
+                  "children": [
+                    {
+                      "kind": "symbol",
+                      "label": "h",
+                      "box": [
+                        11444.0,
+                        2828.0,
+                        11732.0,
+                        3478.0
+                      ],
+                      "stroke_ids": [
+                        3
+                      ],
+                      "score": 0.9983,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "row",
+              "label": "",
+              "box": [
+                12175.0,
+                4131.0,
+                13939.0,
+                5338.0
+              ],
+              "stroke_ids": [
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "score": 0.7386,
+              "children": [
+                {
+                  "kind": "row",
+                  "label": "",
+                  "box": [
+                    12175.0,
+                    4131.0,
+                    13939.0,
+                    5338.0
+                  ],
+                  "stroke_ids": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "score": 0.7386,
+                  "children": [
+                    {
+                      "kind": "symbol",
+                      "label": "t",
+                      "box": [
+                        12175.0,
+                        4220.0,
+                        12522.0,
+                        4859.0
+                      ],
+                      "stroke_ids": [
+                        4,
+                        5
+                      ],
+                      "score": 0.7386,
+                      "children": []
+                    },
+                    {
+                      "kind": "row",
+                      "label": "",
+                      "box": [
+                        12816.0,
+                        4131.0,
+                        13939.0,
+                        5338.0
+                      ],
+                      "stroke_ids": [
+                        6,
+                        7,
+                        8
+                      ],
+                      "score": 0.976,
+                      "children": [
+                        {
+                          "kind": "row",
+                          "label": "",
+                          "box": [
+                            12816.0,
+                            4131.0,
+                            13939.0,
+                            5338.0
+                          ],
+                          "stroke_ids": [
+                            6,
+                            7,
+                            8
+                          ],
+                          "score": 0.976,
+                          "children": [
+                            {
+                              "kind": "symbol",
+                              "label": "d",
+                              "box": [
+                                12816.0,
+                                4327.0,
+                                13222.0,
+                                4982.0
+                              ],
+                              "stroke_ids": [
+                                6
+                              ],
+                              "score": 0.9977,
+                              "children": []
+                            },
+                            {
+                              "kind": "row",
+                              "label": "",
+                              "box": [
+                                13485.0,
+                                4131.0,
+                                13939.0,
+                                5338.0
+                              ],
+                              "stroke_ids": [
+                                7,
+                                8
+                              ],
+                              "score": 0.976,
+                              "children": [
+                                {
+                                  "kind": "symbol",
+                                  "label": "f",
+                                  "box": [
+                                    13485.0,
+                                    4131.0,
+                                    13939.0,
+                                    5338.0
+                                  ],
+                                  "stroke_ids": [
+                                    7,
+                                    8
+                                  ],
+                                  "score": 0.976,
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "symbols": [
+      {
+        "kind": "symbol",
+        "label": "\\int",
+        "box": [
+          11016.0,
+          3683.0,
+          11802.0,
+          5780.0
+        ],
+        "stroke_ids": [
+          0
+        ],
+        "score": 0.9996,
+        "children": []
+      },
+      {
+        "kind": "symbol",
+        "label": "t",
+        "box": [
+          11060.0,
+          6122.0,
+          11475.0,
+          6735.0
+        ],
+        "stroke_ids": [
+          1,
+          2
+        ],
+        "score": 0.903,
+        "children": []
+      },
+      {
+        "kind": "symbol",
+        "label": "h",
+        "box": [
+          11444.0,
+          2828.0,
+          11732.0,
+          3478.0
+        ],
+        "stroke_ids": [
+          3
+        ],
+        "score": 0.9983,
+        "children": []
+      },
+      {
+        "kind": "symbol",
+        "label": "t",
+        "box": [
+          12175.0,
+          4220.0,
+          12522.0,
+          4859.0
+        ],
+        "stroke_ids": [
+          4,
+          5
+        ],
+        "score": 0.7386,
+        "children": []
+      },
+      {
+        "kind": "symbol",
+        "label": "d",
+        "box": [
+          12816.0,
+          4327.0,
+          13222.0,
+          4982.0
+        ],
+        "stroke_ids": [
+          6
+        ],
+        "score": 0.9977,
+        "children": []
+      },
+      {
+        "kind": "symbol",
+        "label": "f",
+        "box": [
+          13485.0,
+          4131.0,
+          13939.0,
+          5338.0
+        ],
+        "stroke_ids": [
+          7,
+          8
+        ],
+        "score": 0.976,
+        "children": []
+      }
+    ],
+    "timing_ms": {
+      "total": 73.153,
+      "candidate_and_model": 28.348
+    },
+    "within_1s": true,
+    "model": "v4",
+    "candidate_count": 60,
+    "warnings": [
+      "实验模型输出需核对；分组、布局和置信分数尚未校准。"
+    ],
+    "server_total_ms": 73.265
+  },
+  "expected_latex": "\\int_{t}^{h} t d f",
+  "invalid_input_checks": [
+    {
+      "status": 400,
+      "error": "JSON 请求体必须为对象"
+    },
+    {
+      "status": 400,
+      "error": "需要 1～128 笔"
+    },
+    {
+      "status": 400,
+      "error": "坐标必须是有限数字"
+    },
+    {
+      "status": 400,
+      "error": "revision 必须是非负整数"
+    },
+    {
+      "status": 400,
+      "error": "需要 1～128 笔"
+    }
+  ],
+  "process_reaped": true
+}

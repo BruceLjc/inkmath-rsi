@@ -1,0 +1,87 @@
+{
+  "checkpoint": "artifacts/v4-snapshot.pt",
+  "model": "v4-snapshot",
+  "model_load_warmup_ms": 5.948707927018404,
+  "full_cli_process_ms": 808.5565003566444,
+  "cli_exit_code": 0,
+  "stress_is_not_accuracy_test": true,
+  "cases": [
+    {
+      "case": "real_integral",
+      "strokes": 9,
+      "points": 306,
+      "runs": 4,
+      "p50_ms": 26.5015,
+      "p99_ms": 67.40365,
+      "max_ms": 68.668,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_32_sparse",
+      "strokes": 32,
+      "points": 2560,
+      "runs": 4,
+      "p50_ms": 105.3615,
+      "p99_ms": 113.72623999999999,
+      "max_ms": 113.966,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_32_overlap",
+      "strokes": 32,
+      "points": 2560,
+      "runs": 4,
+      "p50_ms": 288.156,
+      "p99_ms": 289.8906,
+      "max_ms": 289.935,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_64_sparse",
+      "strokes": 64,
+      "points": 5120,
+      "runs": 4,
+      "p50_ms": 243.8845,
+      "p99_ms": 247.47125,
+      "max_ms": 247.505,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_64_overlap",
+      "strokes": 64,
+      "points": 5120,
+      "runs": 4,
+      "p50_ms": 631.4245000000001,
+      "p99_ms": 637.54189,
+      "max_ms": 637.708,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_128_sparse",
+      "strokes": 128,
+      "points": 10240,
+      "runs": 4,
+      "p50_ms": 496.084,
+      "p99_ms": 499.15164,
+      "max_ms": 499.239,
+      "over_1s": 0,
+      "errors": []
+    },
+    {
+      "case": "stress_128_overlap",
+      "strokes": 128,
+      "points": 10240,
+      "runs": 4,
+      "p50_ms": 746.518,
+      "p99_ms": 756.72884,
+      "max_ms": 756.992,
+      "over_1s": 0,
+      "errors": []
+    }
+  ]
+}

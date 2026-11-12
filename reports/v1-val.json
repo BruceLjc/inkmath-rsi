@@ -1,0 +1,2288 @@
+{
+  "summary": {
+    "split": "val",
+    "samples": 120,
+    "checkpoint": "artifacts/v1.pt",
+    "grouping_cost": 0.9,
+    "model_parameters": 254658,
+    "model_load_and_warmup_ms": 13.401833362877369,
+    "e2e_exact": 0.08333333333333333,
+    "correct_within_1s": 0.08333333333333333,
+    "latency_ms": {
+      "p50": 15.6905,
+      "p95": 53.455799999999996,
+      "p99": 68.99547000000003,
+      "max": 89.237
+    },
+    "over_1s": 0,
+    "symbol_accuracy_given_gold_groups": 0.8899237933954276,
+    "grouping_exact": 0.18333333333333332,
+    "layout_exact_given_gold_labels_and_groups": 0.4083333333333333,
+    "e2e_given_gold_groups": 0.19166666666666668,
+    "uncertain_rate": 0.7916666666666666,
+    "errors": 0,
+    "categories": {
+      "basic": {
+        "n": 39,
+        "correct": 6,
+        "layout_oracle_correct": 25
+      },
+      "root": {
+        "n": 19,
+        "correct": 3,
+        "layout_oracle_correct": 8
+      },
+      "fraction": {
+        "n": 28,
+        "correct": 0,
+        "layout_oracle_correct": 8
+      },
+      "superscript": {
+        "n": 45,
+        "correct": 1,
+        "layout_oracle_correct": 9
+      },
+      "integral": {
+        "n": 4,
+        "correct": 0,
+        "layout_oracle_correct": 0
+      },
+      "subscript": {
+        "n": 26,
+        "correct": 0,
+        "layout_oracle_correct": 3
+      },
+      "function": {
+        "n": 7,
+        "correct": 1,
+        "layout_oracle_correct": 2
+      },
+      "sum": {
+        "n": 4,
+        "correct": 0,
+        "layout_oracle_correct": 2
+      },
+      "limit": {
+        "n": 2,
+        "correct": 0,
+        "layout_oracle_correct": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire009-equation010.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "( ( 9 6 / 4 3 ) / 1 5 9 ) - ( 1 7 2 + 1 0 1 + 8 9 - 1 2 5 ) \\neq - 1 5 3",
+      "prediction": "( ( 9 6 / 4 \\sin^{-} 9 \\sin 2 + 1 0 1 + 8 9 - 1 2 5 ) \\neq - 1 5 3",
+      "correct": false,
+      "ms": 89.237,
+      "symbol_correct": 35,
+      "symbol_total": 35,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "( ( 9 6 / 4 3 ) / 1 5 9 ) - ( 1 7 2 + 1 0 1 + 8 9 - 1 2 5 ) \\neq - 1 5 3",
+      "uncertain": true,
+      "strokes": 44
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-176.inkml",
+      "categories": [
+        "root"
+      ],
+      "target": ". . . + \\sqrt{r}",
+      "prediction": "\\ldots \\sqrt",
+      "correct": false,
+      "ms": 8.021,
+      "symbol_correct": 5,
+      "symbol_total": 6,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": ". . . + \\sqrt{r}",
+      "uncertain": false,
+      "strokes": 7
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation015.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "( ( 1 4 5 / 1 3 5 ) + 1 7 2 ) \\times 1 6 1 \\leq 2 7 8 6 5",
+      "prediction": "( (^{1} 4 5 m^{+ 1} 1 - 2 )^{x} 1 6 1 \\cos^{6 5}",
+      "correct": false,
+      "ms": 53.276,
+      "symbol_correct": 23,
+      "symbol_total": 25,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "( (^{1} 4 5 / 1 3 5 )^{+} 1 7 2 )^{\\times} 1 6 1 \\leq 2 7 8 6 5",
+      "uncertain": true,
+      "strokes": 33
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/KME1G3_5_sub_21.inkml",
+      "categories": [
+        "fraction",
+        "root"
+      ],
+      "target": "A = \\sqrt{a + \\frac{1}{\\sqrt{a + \\frac{1}{\\sqrt{a}}}}} + \\sqrt{b}",
+      "prediction": "t 1^{=} \\sqrt{+ \\sqrt{\\frac{- 1}{\\sqrt{a}} a +}} a \\sqrt{b}",
+      "correct": false,
+      "ms": 44.335,
+      "symbol_correct": 16,
+      "symbol_total": 17,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "A^{=} \\sqrt{+ \\frac{1}{\\sqrt{a + \\frac{1}{\\sqrt{a}}}}} a + \\sqrt{b}",
+      "uncertain": true,
+      "strokes": 23
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/TrainData2_21_sub_15.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "( x^{3} - x^{2} - x ) ( 2 x - 7 )",
+      "prediction": "\\cos \\cos \\cos^{-} n )",
+      "correct": false,
+      "ms": 28.053,
+      "symbol_correct": 14,
+      "symbol_total": 15,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "( x^{3} - x^{2_{-}} x ) (^{2} x^{-} 7 )",
+      "uncertain": true,
+      "strokes": 19
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire006-equation041.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "X \\rightarrow Y",
+      "prediction": ". \\ldots",
+      "correct": false,
+      "ms": 4.895,
+      "symbol_correct": 0,
+      "symbol_total": 3,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "X \\rightarrow Y",
+      "uncertain": true,
+      "strokes": 5
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-199.inkml",
+      "categories": [
+        "integral",
+        "subscript",
+        "superscript"
+      ],
+      "target": "\\int_{t}^{h} t d f",
+      "prediction": "1^{t} d f",
+      "correct": false,
+      "ms": 13.163,
+      "symbol_correct": 6,
+      "symbol_total": 6,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\int_{t}^{h}^{t} d f",
+      "uncertain": true,
+      "strokes": 9
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/2009220-1327-53.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "- q",
+      "prediction": "- 9",
+      "correct": false,
+      "ms": 1.055,
+      "symbol_correct": 1,
+      "symbol_total": 2,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "- q",
+      "uncertain": false,
+      "strokes": 2
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire013-equation042.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "\\phi ( r , \\theta )",
+      "prediction": "\\phi \\cos",
+      "correct": false,
+      "ms": 7.802,
+      "symbol_correct": 6,
+      "symbol_total": 6,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\phi (_{r_{,}} \\theta )",
+      "uncertain": true,
+      "strokes": 7
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-18.inkml",
+      "categories": [
+        "fraction",
+        "superscript"
+      ],
+      "target": "a^{x} + b^{x} + \\frac{c}{2}",
+      "prediction": "a^{\\times} + \\frac{\\ldots}{2}",
+      "correct": false,
+      "ms": 16.571,
+      "symbol_correct": 6,
+      "symbol_total": 9,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "a^{x} + b^{x} + \\frac{c}{2}",
+      "uncertain": true,
+      "strokes": 13
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/KME2G3_7_sub_26.inkml",
+      "categories": [
+        "subscript"
+      ],
+      "target": "x_{1} \\times x_{2} \\times x_{3} \\times x_{4} = X",
+      "prediction": "7 \\cos \\ldots . \\cos 4^{=} / .",
+      "correct": false,
+      "ms": 34.49,
+      "symbol_correct": 10,
+      "symbol_total": 13,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "x_{1} \\times x_{2} \\times x_{3} \\times x_{4} = X",
+      "uncertain": true,
+      "strokes": 23
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1331-126.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "\\alpha \\theta C",
+      "prediction": "2 h \\theta C",
+      "correct": false,
+      "ms": 13.053,
+      "symbol_correct": 2,
+      "symbol_total": 3,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\alpha \\theta C",
+      "uncertain": true,
+      "strokes": 8
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation028.inkml",
+      "categories": [
+        "root"
+      ],
+      "target": "\\sqrt{a + b}",
+      "prediction": "\\sqrt{\\sin}",
+      "correct": false,
+      "ms": 5.489,
+      "symbol_correct": 4,
+      "symbol_total": 4,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "\\sqrt{a + b}",
+      "uncertain": true,
+      "strokes": 5
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire013-equation007.inkml",
+      "categories": [
+        "fraction"
+      ],
+      "target": "\\pi = \\frac{2 a}{l p}",
+      "prediction": "\\ldots T i",
+      "correct": false,
+      "ms": 13.755,
+      "symbol_correct": 4,
+      "symbol_total": 7,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\pi = \\frac{2_{a}}{l p}",
+      "uncertain": true,
+      "strokes": 11
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/2009220-1327-4.inkml",
+      "categories": [
+        "root",
+        "superscript"
+      ],
+      "target": "\\sqrt{X}^{8}",
+      "prediction": "\\sqrt{\\times}",
+      "correct": false,
+      "ms": 4.391,
+      "symbol_correct": 2,
+      "symbol_total": 3,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\sqrt{X}^{8}",
+      "uncertain": true,
+      "strokes": 4
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire025-equation059.inkml",
+      "categories": [
+        "subscript"
+      ],
+      "target": "u_{n} = u_{n_{0}}",
+      "prediction": "\\ldots_{n_{0}}",
+      "correct": false,
+      "ms": 7.204,
+      "symbol_correct": 5,
+      "symbol_total": 6,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "u_{n} = u_{n} 0",
+      "uncertain": true,
+      "strokes": 7
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation071.inkml",
+      "categories": [
+        "fraction"
+      ],
+      "target": "\\frac{1}{2} ( 1 \\pm i )",
+      "prediction": "\\tan^{= i} )",
+      "correct": false,
+      "ms": 13.545,
+      "symbol_correct": 8,
+      "symbol_total": 8,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{1}{2} (^{1} \\pm i )",
+      "uncertain": true,
+      "strokes": 11
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/TrainData2_12_sub_43.inkml",
+      "categories": [
+        "fraction",
+        "superscript"
+      ],
+      "target": "\\frac{2 \\tan \\alpha}{1 - \\tan^{2} \\alpha}",
+      "prediction": "\\frac{t a n \\alpha}{1 - t}",
+      "correct": false,
+      "ms": 23.344,
+      "symbol_correct": 8,
+      "symbol_total": 9,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{2 \\tan \\alpha}{1 - \\tan^{2} \\alpha}",
+      "uncertain": true,
+      "strokes": 15
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation073.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "\\gamma^{0} = \\beta",
+      "prediction": "m",
+      "correct": false,
+      "ms": 4.429,
+      "symbol_correct": 3,
+      "symbol_total": 4,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\gamma^{0} = \\beta",
+      "uncertain": true,
+      "strokes": 5
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/2009220-1327-85.inkml",
+      "categories": [
+        "fraction",
+        "root",
+        "superscript"
+      ],
+      "target": "\\sqrt{\\frac{2 z^{3}}{\\sqrt{\\frac{3 z^{2}}{\\sqrt{4 z}}}}}",
+      "prediction": "\\sqrt{\\tan 2_{-} \\geq 4 z}",
+      "correct": false,
+      "ms": 30.358,
+      "symbol_correct": 10,
+      "symbol_total": 13,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\sqrt{\\frac{2_{z} 3}{\\sqrt{\\frac{3 z 2}{\\sqrt{4}}}}_{z}}",
+      "uncertain": true,
+      "strokes": 15
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-48.inkml",
+      "categories": [
+        "fraction",
+        "function"
+      ],
+      "target": "\\sin ( \\frac{\\pi}{3} ) = \\frac{1}{2}",
+      "prediction": "\\sin (^{\\pi} + 3 - t",
+      "correct": false,
+      "ms": 23.946,
+      "symbol_correct": 10,
+      "symbol_total": 10,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "\\sin ( \\frac{\\pi}{3} ) = \\frac{1}{2}",
+      "uncertain": true,
+      "strokes": 16
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire011-equation021.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "k = - 1",
+      "prediction": "\\ldots 1_{-}",
+      "correct": false,
+      "ms": 8.189,
+      "symbol_correct": 3,
+      "symbol_total": 4,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "k = - 1",
+      "uncertain": true,
+      "strokes": 8
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation012.inkml",
+      "categories": [
+        "subscript",
+        "sum",
+        "superscript"
+      ],
+      "target": "g ( w ) = \\sum_{n = 1}^{\\infty} g_{n} w^{n}",
+      "prediction": "m = \\sum g^{n} u^{n}",
+      "correct": false,
+      "ms": 23.818,
+      "symbol_correct": 12,
+      "symbol_total": 14,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "g ( w ) = \\sum_{n = 1}^{\\infty}_{g} n w^{n}",
+      "uncertain": true,
+      "strokes": 16
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/2009220-1327-19.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "x^{2} + y^{2} = z^{2}",
+      "prediction": "\\times \\ldots -",
+      "correct": false,
+      "ms": 15.988,
+      "symbol_correct": 5,
+      "symbol_total": 8,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "x^{2} + y^{2} = z^{2}",
+      "uncertain": true,
+      "strokes": 12
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire004-equation061.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "a x + b y + c z + d = 0",
+      "prediction": "a x + \\log + c \\ldots 0",
+      "correct": false,
+      "ms": 19.392,
+      "symbol_correct": 10,
+      "symbol_total": 12,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "a x + b y + c z + d = 0",
+      "uncertain": true,
+      "strokes": 16
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire009-equation064.inkml",
+      "categories": [
+        "subscript"
+      ],
+      "target": "( x_{1} + b_{1} t , y_{1} - a_{1} t )",
+      "prediction": "( x 1 + \\sin y \\ldots a b )",
+      "correct": false,
+      "ms": 27.091,
+      "symbol_correct": 14,
+      "symbol_total": 15,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "( x 1 + b_{1} t_{,} y 1 - a 1 t )",
+      "uncertain": true,
+      "strokes": 19
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire001-equation034.inkml",
+      "categories": [
+        "subscript"
+      ],
+      "target": "\\alpha = ( \\alpha_{1} , \\alpha_{2} , \\ldots , \\alpha_{n} )",
+      "prediction": "\\alpha = ( \\alpha 1 \\alpha \\ldots \\sin )",
+      "correct": false,
+      "ms": 21.432,
+      "symbol_correct": 10,
+      "symbol_total": 14,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\alpha = ( \\alpha_{1} , \\alpha_{2} , \\ldots , \\alpha_{n} )",
+      "uncertain": true,
+      "strokes": 17
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/expressmatch/90_herbert.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "y = r sin \\theta",
+      "prediction": "y^{=} r \\sin \\theta",
+      "correct": false,
+      "ms": 12.94,
+      "symbol_correct": 5,
+      "symbol_total": 5,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "y^{=} r \\sin \\theta",
+      "uncertain": false,
+      "strokes": 10
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-54.inkml",
+      "categories": [
+        "function",
+        "subscript",
+        "superscript"
+      ],
+      "target": "\\log_{2} ( 2^{5} ) = 5",
+      "prediction": "\\log m_{-} 5",
+      "correct": false,
+      "ms": 15.929,
+      "symbol_correct": 8,
+      "symbol_total": 8,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\log_{2} ( 2 5 )_{=} 5",
+      "uncertain": true,
+      "strokes": 11
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire010-equation053.inkml",
+      "categories": [
+        "fraction"
+      ],
+      "target": "\\frac{3}{4}",
+      "prediction": "q",
+      "correct": false,
+      "ms": 2.035,
+      "symbol_correct": 3,
+      "symbol_total": 3,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "\\frac{3}{4}",
+      "uncertain": true,
+      "strokes": 3
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire004-equation036.inkml",
+      "categories": [
+        "subscript",
+        "superscript"
+      ],
+      "target": "( z^{2} + y_{0} - a_{0} z - b_{0} ) ( z^{2} + y_{0} + a_{0} z + b_{0} ) = 0",
+      "prediction": "(_{2} ._{0}^{- \\ldots} \\sin + y^{0} + a z^{+} \\sin 0",
+      "correct": false,
+      "ms": 56.886,
+      "symbol_correct": 25,
+      "symbol_total": 30,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "(_{z} 2 + y 0 - a_{0} z - b_{0} ) ( z 2 + y^{0} + a_{0} z + b_{0} ) = 0",
+      "uncertain": true,
+      "strokes": 35
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire013-equation014.inkml",
+      "categories": [
+        "fraction",
+        "subscript"
+      ],
+      "target": "\\frac{u_{n + 1}}{u_{n}}",
+      "prediction": "\\frac{.}{u_{n}}",
+      "correct": false,
+      "ms": 11.113,
+      "symbol_correct": 5,
+      "symbol_total": 7,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{u_{n} + 1}{u_{n}}",
+      "uncertain": true,
+      "strokes": 9
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-185.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "- Y",
+      "prediction": "- Y",
+      "correct": true,
+      "ms": 1.879,
+      "symbol_correct": 2,
+      "symbol_total": 2,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "- Y",
+      "uncertain": false,
+      "strokes": 3
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/TrainData2_12_sub_41.inkml",
+      "categories": [
+        "fraction"
+      ],
+      "target": "\\frac{\\tan \\alpha - \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta}",
+      "prediction": "\\frac{\\tan \\alpha^{-} \\tan \\beta}{1 + t a n \\alpha \\tan \\beta}",
+      "correct": false,
+      "ms": 46.398,
+      "symbol_correct": 12,
+      "symbol_total": 12,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{\\tan \\alpha^{-} \\tan \\beta}{1 + \\tan \\alpha \\tan \\beta}",
+      "uncertain": true,
+      "strokes": 24
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-239.inkml",
+      "categories": [
+        "root",
+        "subscript"
+      ],
+      "target": "\\sqrt{\\beta - Y_{k}}",
+      "prediction": "\\sqrt{\\beta Y_{k}}",
+      "correct": false,
+      "ms": 12.113,
+      "symbol_correct": 5,
+      "symbol_total": 5,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\sqrt{\\beta^{-} Y_{k}}",
+      "uncertain": false,
+      "strokes": 8
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation054.inkml",
+      "categories": [
+        "fraction"
+      ],
+      "target": "\\beta = \\frac{v}{c} = \\frac{b}{a}",
+      "prediction": "\\beta = \\div = \\frac{b}{a}",
+      "correct": false,
+      "ms": 14.411,
+      "symbol_correct": 8,
+      "symbol_total": 9,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\beta = \\frac{v}{c} = \\frac{b}{a}",
+      "uncertain": false,
+      "strokes": 11
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/TrainData2_12_sub_13.inkml",
+      "categories": [
+        "fraction",
+        "function"
+      ],
+      "target": "\\frac{\\sin \\theta + \\cos \\theta + \\tan \\theta}{x + y + z}",
+      "prediction": "\\frac{n \\theta + \\cos \\theta + \\tan \\theta}{x + y^{+}}",
+      "correct": false,
+      "ms": 56.872,
+      "symbol_correct": 14,
+      "symbol_total": 14,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{\\sin \\theta + \\cos \\theta + \\tan \\theta}{x + y^{+} z}",
+      "uncertain": false,
+      "strokes": 31
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-170.inkml",
+      "categories": [
+        "function"
+      ],
+      "target": "\\sin y",
+      "prediction": "\\sin y",
+      "correct": true,
+      "ms": 5.237,
+      "symbol_correct": 2,
+      "symbol_total": 2,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "\\sin y",
+      "uncertain": false,
+      "strokes": 5
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire001-equation014.inkml",
+      "categories": [
+        "subscript"
+      ],
+      "target": "f_{a , b , c} ( d )",
+      "prediction": "k \\sin",
+      "correct": false,
+      "ms": 11.449,
+      "symbol_correct": 7,
+      "symbol_total": 9,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "f_{a} , b_{,} c ( d )",
+      "uncertain": true,
+      "strokes": 9
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1331-248.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "\\Delta",
+      "prediction": "\\Delta",
+      "correct": true,
+      "ms": 0.937,
+      "symbol_correct": 1,
+      "symbol_total": 1,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "\\Delta",
+      "uncertain": false,
+      "strokes": 2
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire013-equation061.inkml",
+      "categories": [
+        "root"
+      ],
+      "target": "\\sqrt{a} \\sqrt{b} = \\sqrt{a b}",
+      "prediction": "\\sqrt{a} \\sqrt{b} = \\sqrt{a l}",
+      "correct": false,
+      "ms": 18.552,
+      "symbol_correct": 7,
+      "symbol_total": 8,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\sqrt{a} \\sqrt{b} = \\sqrt{a b}",
+      "uncertain": true,
+      "strokes": 13
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-134.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "9 j",
+      "prediction": "9 j",
+      "correct": true,
+      "ms": 2.066,
+      "symbol_correct": 2,
+      "symbol_total": 2,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "9 j",
+      "uncertain": false,
+      "strokes": 3
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire004-equation029.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "( p , l )",
+      "prediction": "\\sin",
+      "correct": false,
+      "ms": 4.454,
+      "symbol_correct": 4,
+      "symbol_total": 5,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "( p , l )",
+      "uncertain": true,
+      "strokes": 5
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire025-equation026.inkml",
+      "categories": [
+        "subscript",
+        "superscript"
+      ],
+      "target": "c_{i}^{0}",
+      "prediction": ". i^{9}",
+      "correct": false,
+      "ms": 6.344,
+      "symbol_correct": 2,
+      "symbol_total": 3,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "c i^{0}",
+      "uncertain": true,
+      "strokes": 6
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-310.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "l",
+      "prediction": "1",
+      "correct": false,
+      "ms": 0.481,
+      "symbol_correct": 0,
+      "symbol_total": 1,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "l",
+      "uncertain": true,
+      "strokes": 1
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire006-equation025.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "1 8 9 \\pm 1 5 9 \\times ( 5 0 \\times 9 9 )",
+      "prediction": "1 8 9 - 1 - m m 9 9 )",
+      "correct": false,
+      "ms": 31.757,
+      "symbol_correct": 13,
+      "symbol_total": 15,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "1 8 9 \\pm 1 5 9 \\times (^{5} 0 \\times 9 9 )",
+      "uncertain": true,
+      "strokes": 21
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire013-equation072.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "b c = h^{2}",
+      "prediction": "b_{c} = h^{2}",
+      "correct": false,
+      "ms": 7.513,
+      "symbol_correct": 5,
+      "symbol_total": 5,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "b_{c} = h^{2}",
+      "uncertain": false,
+      "strokes": 7
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire004-equation073.inkml",
+      "categories": [
+        "subscript"
+      ],
+      "target": "r_{1} + r_{2}",
+      "prediction": "\\beta_{1} + u",
+      "correct": false,
+      "ms": 5.9,
+      "symbol_correct": 3,
+      "symbol_total": 5,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "r_{1} + r 2",
+      "uncertain": true,
+      "strokes": 6
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/expressmatch/91_user0.inkml",
+      "categories": [
+        "fraction",
+        "root",
+        "superscript"
+      ],
+      "target": "sin \\theta = \\frac{y}{\\sqrt{x^{2} + y^{2}}}",
+      "prediction": "\\sin \\theta_{=} + \\sqrt{2 + y} x",
+      "correct": false,
+      "ms": 38.344,
+      "symbol_correct": 11,
+      "symbol_total": 11,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\sin \\theta_{=} \\frac{y}{\\sqrt{2 + y^{2}} x}",
+      "uncertain": true,
+      "strokes": 18
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire011-equation035.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "3 6 - 7 3 + 1 7 5 \\leq 1 3 8",
+      "prediction": "3 6_{-} 7 3 + 1 7 \\cos 8",
+      "correct": false,
+      "ms": 22.848,
+      "symbol_correct": 13,
+      "symbol_total": 13,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "3 6_{-} 7 3 + 1 7 5 \\leq 1 3 8",
+      "uncertain": true,
+      "strokes": 17
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire001-equation036.inkml",
+      "categories": [
+        "function",
+        "superscript"
+      ],
+      "target": "\\cos x + i \\sin x = e^{i x}",
+      "prediction": "\\cos \\ldots \\sin \\ldots i_{x}",
+      "correct": false,
+      "ms": 21.457,
+      "symbol_correct": 10,
+      "symbol_total": 10,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\cos x + i \\sin x = e i_{x}",
+      "uncertain": true,
+      "strokes": 16
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1331-58.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "b",
+      "prediction": "b",
+      "correct": true,
+      "ms": 0.502,
+      "symbol_correct": 1,
+      "symbol_total": 1,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "b",
+      "uncertain": false,
+      "strokes": 1
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire011-equation068.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "e^{X + Y} - e^{X} e^{Y}",
+      "prediction": "e^{\\times} + \\ldots_{e}^{\\times Y}",
+      "correct": false,
+      "ms": 21.118,
+      "symbol_correct": 7,
+      "symbol_total": 9,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "e^{X} + Y - e X e Y",
+      "uncertain": true,
+      "strokes": 16
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire013-equation033.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "f ( x ) = - x",
+      "prediction": "f^{w} \\ldots c",
+      "correct": false,
+      "ms": 14.076,
+      "symbol_correct": 7,
+      "symbol_total": 7,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "f^{(} x ) = - x",
+      "uncertain": true,
+      "strokes": 11
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire010-equation003.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "x^{4} - 4 x^{3} - 1 4 x^{2} - 4 x + 1",
+      "prediction": "x 4 \\ldots 1 \\ldots 3 4 x 2 - 4_{x} + 1",
+      "correct": false,
+      "ms": 37.121,
+      "symbol_correct": 16,
+      "symbol_total": 16,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "x 4 - 4 x 3 - 1 4 x 2 - 4_{x} + 1",
+      "uncertain": true,
+      "strokes": 26
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1331-18.inkml",
+      "categories": [
+        "fraction",
+        "superscript"
+      ],
+      "target": "a^{x} + b^{x} + \\frac{c}{2}",
+      "prediction": "a^{\\times} + b^{x} + \\frac{C}{2}",
+      "correct": false,
+      "ms": 19.463,
+      "symbol_correct": 7,
+      "symbol_total": 9,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "a^{x} + b^{x} + \\frac{c}{2}",
+      "uncertain": true,
+      "strokes": 13
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire013-equation047.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "u = 3 j",
+      "prediction": "\\ldots j",
+      "correct": false,
+      "ms": 6.122,
+      "symbol_correct": 4,
+      "symbol_total": 4,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "u = 3 j",
+      "uncertain": true,
+      "strokes": 6
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-56.inkml",
+      "categories": [
+        "root"
+      ],
+      "target": "2 \\alpha + 3 \\sqrt{\\beta}",
+      "prediction": ". \\beta",
+      "correct": false,
+      "ms": 10.684,
+      "symbol_correct": 6,
+      "symbol_total": 6,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "2 \\alpha + 3 \\sqrt{\\beta}",
+      "uncertain": true,
+      "strokes": 8
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation049.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "u ( a ) = u ( b ) = 0",
+      "prediction": "m m 0",
+      "correct": false,
+      "ms": 16.503,
+      "symbol_correct": 9,
+      "symbol_total": 11,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "u (_{a} ) = u ( b ) = 0",
+      "uncertain": true,
+      "strokes": 13
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-84.inkml",
+      "categories": [
+        "fraction"
+      ],
+      "target": "\\frac{x}{a + \\frac{x}{b - \\frac{x}{c}}}",
+      "prediction": "\\frac{\\frac{x}{a + . ,}_{= .}}{c}_{j}",
+      "correct": false,
+      "ms": 25.298,
+      "symbol_correct": 11,
+      "symbol_total": 11,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{\\frac{\\frac{x}{a + x}}{x}}{c}_{b_{-}}",
+      "uncertain": false,
+      "strokes": 16
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation038.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "z^{k + 1}",
+      "prediction": "\\sqrt",
+      "correct": false,
+      "ms": 5.985,
+      "symbol_correct": 4,
+      "symbol_total": 4,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "z^{k} + 1",
+      "uncertain": true,
+      "strokes": 6
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/expressmatch/107_user0.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "a^{2} + b^{2} = ( a + b i ) ( a - b i )",
+      "prediction": "a 2_{+} b^{2} = ( a + b w b i )",
+      "correct": false,
+      "ms": 37.682,
+      "symbol_correct": 18,
+      "symbol_total": 18,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "a 2_{+} b^{2} = ( a + b i ) ( a^{-} b i )",
+      "uncertain": true,
+      "strokes": 23
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/TrainData2_21_sub_1.inkml",
+      "categories": [
+        "subscript"
+      ],
+      "target": "x_{1} + x_{2} = x_{3}",
+      "prediction": "7 \\cos \\cos 3",
+      "correct": false,
+      "ms": 15.931,
+      "symbol_correct": 8,
+      "symbol_total": 8,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "x_{1} + x_{2} = x 3",
+      "uncertain": true,
+      "strokes": 13
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/2009220-1327-42.inkml",
+      "categories": [
+        "fraction",
+        "superscript"
+      ],
+      "target": "\\frac{1}{3} \\pi r^{2} h",
+      "prediction": "t^{\\pi} n",
+      "correct": false,
+      "ms": 12.887,
+      "symbol_correct": 6,
+      "symbol_total": 7,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{1}{3}^{\\pi} r^{2} h",
+      "uncertain": true,
+      "strokes": 9
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-75.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "b \\sigma",
+      "prediction": "b_{\\sigma}",
+      "correct": false,
+      "ms": 1.295,
+      "symbol_correct": 1,
+      "symbol_total": 2,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "b_{\\sigma}",
+      "uncertain": true,
+      "strokes": 2
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire011-equation012.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "q^{i ( 0 )} = q^{i}",
+      "prediction": "9^{\\times} ( \\ldots^{i}",
+      "correct": false,
+      "ms": 12.774,
+      "symbol_correct": 5,
+      "symbol_total": 8,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "q i ( 0 ) = q^{i}",
+      "uncertain": true,
+      "strokes": 11
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire003-equation008.inkml",
+      "categories": [
+        "subscript"
+      ],
+      "target": "g_{a b}",
+      "prediction": "g d",
+      "correct": false,
+      "ms": 3.562,
+      "symbol_correct": 1,
+      "symbol_total": 3,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "g a b",
+      "uncertain": true,
+      "strokes": 4
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1331-191.inkml",
+      "categories": [
+        "sum"
+      ],
+      "target": "c + \\sum h",
+      "prediction": "\\cos",
+      "correct": false,
+      "ms": 6.589,
+      "symbol_correct": 3,
+      "symbol_total": 4,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "c + \\sum h",
+      "uncertain": true,
+      "strokes": 6
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire025-equation022.inkml",
+      "categories": [
+        "limit",
+        "subscript"
+      ],
+      "target": "\\lim_{n \\rightarrow + \\infty} u_{n} = - \\infty",
+      "prediction": "\\tan - \\lim = - \\infty",
+      "correct": false,
+      "ms": 23.832,
+      "symbol_correct": 9,
+      "symbol_total": 10,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\lim_{n \\rightarrow + \\infty}^{u} n = - \\infty",
+      "uncertain": true,
+      "strokes": 16
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation041.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "2 \\times 2 - 2 \\times 1 - 2 \\times 1 = 2 \\times 1 - 1 \\times 1 - 1 \\times 1",
+      "prediction": "2 x 2 - 2 x 1 - 2 . - 1 = .^{-} 1 x \\ldots 1 . 1",
+      "correct": false,
+      "ms": 43.302,
+      "symbol_correct": 19,
+      "symbol_total": 23,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "2 \\times 2 - 2 \\times 1 - 2 \\times 1 = 2 \\times 1 - 1 \\times 1 - 1 \\times 1",
+      "uncertain": true,
+      "strokes": 30
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire011-equation040.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "( ( 6 5 + 1 9 7 ) \\div 1 2 ) \\div 1 9 0 \\neq 0",
+      "prediction": "\\cos 1 9 7 ) \\div 1 2 ) - \\ldots + 0",
+      "correct": false,
+      "ms": 41.167,
+      "symbol_correct": 18,
+      "symbol_total": 19,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "( (^{6} 5 + 1 9 7 ) \\div 1 2 ) \\div 1 9^{0} \\neq 0",
+      "uncertain": true,
+      "strokes": 27
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire003-equation037.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "k = f ( a + h ) - f ( a )",
+      "prediction": "k_{=} \\tan w_{-} f k )",
+      "correct": false,
+      "ms": 25.234,
+      "symbol_correct": 10,
+      "symbol_total": 13,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "k_{=} f ( a + h )_{-} f (_{a} )",
+      "uncertain": true,
+      "strokes": 17
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-157.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "6 . 5",
+      "prediction": "G 5",
+      "correct": false,
+      "ms": 2.04,
+      "symbol_correct": 3,
+      "symbol_total": 3,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "6_{.} 5",
+      "uncertain": true,
+      "strokes": 3
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation040.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "1 0 3 \\pm 1 4 4 + 1 1 3 + 2 7",
+      "prediction": "\\cos \\pm 1 4 \\ldots 1 3 + 2 \\neq",
+      "correct": false,
+      "ms": 27.811,
+      "symbol_correct": 13,
+      "symbol_total": 14,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "1 0 3 \\pm 1 4 4 + 1 1 3 + 2 7",
+      "uncertain": true,
+      "strokes": 19
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation013.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "x^{2} - 2 x + 5",
+      "prediction": "x \\ldots_{-} 5",
+      "correct": false,
+      "ms": 13.144,
+      "symbol_correct": 7,
+      "symbol_total": 7,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "x^{2} - 2_{x} + 5",
+      "uncertain": true,
+      "strokes": 11
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-139.inkml",
+      "categories": [
+        "subscript"
+      ],
+      "target": "e_{\\pi} M",
+      "prediction": "e \\pi M",
+      "correct": false,
+      "ms": 6.972,
+      "symbol_correct": 3,
+      "symbol_total": 3,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "e \\pi M",
+      "uncertain": false,
+      "strokes": 5
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire001-equation023.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "e^{- 1}",
+      "prediction": "1^{-} 1",
+      "correct": false,
+      "ms": 1.421,
+      "symbol_correct": 2,
+      "symbol_total": 3,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "e^{-} 1",
+      "uncertain": true,
+      "strokes": 3
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-20.inkml",
+      "categories": [
+        "fraction",
+        "function"
+      ],
+      "target": "\\frac{\\sin ( x )}{\\cos ( x )} = \\tan ( x )",
+      "prediction": "\\frac{\\sin ( \\lambda}{\\cos (}_{x )}^{= \\tan} n .",
+      "correct": false,
+      "ms": 42.78,
+      "symbol_correct": 12,
+      "symbol_total": 14,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{\\sin (_{x} )}{\\cos (}_{x )}^{= \\tan} ( x )",
+      "uncertain": true,
+      "strokes": 26
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1331-196.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": ". . . + ( r )",
+      "prediction": "\\ldots + \\cos",
+      "correct": false,
+      "ms": 9.462,
+      "symbol_correct": 7,
+      "symbol_total": 7,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": ". . . + ( r )",
+      "uncertain": true,
+      "strokes": 8
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire003-equation052.inkml",
+      "categories": [
+        "subscript",
+        "superscript"
+      ],
+      "target": "a_{i j}^{k}",
+      "prediction": "0 \\log",
+      "correct": false,
+      "ms": 9.905,
+      "symbol_correct": 3,
+      "symbol_total": 4,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "a i k j",
+      "uncertain": true,
+      "strokes": 7
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire003-equation001.inkml",
+      "categories": [
+        "fraction"
+      ],
+      "target": "- \\frac{1}{\\pi}",
+      "prediction": "- \\div -",
+      "correct": false,
+      "ms": 7.256,
+      "symbol_correct": 4,
+      "symbol_total": 4,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "- \\frac{1}{\\pi}",
+      "uncertain": true,
+      "strokes": 6
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1331-287.inkml",
+      "categories": [
+        "subscript",
+        "sum",
+        "superscript"
+      ],
+      "target": "\\sum_{I = b}^{( V )} v + \\gamma",
+      "prediction": "\\pm i_{= b}^{V v} + \\gamma",
+      "correct": false,
+      "ms": 26.469,
+      "symbol_correct": 10,
+      "symbol_total": 10,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\sum_{I^{=} b}^{( V )}^{v} + \\gamma",
+      "uncertain": true,
+      "strokes": 15
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire013-equation058.inkml",
+      "categories": [
+        "fraction",
+        "integral"
+      ],
+      "target": "\\int \\frac{1}{y} + \\frac{1}{1 - y} d y = \\int d x",
+      "prediction": "\\int \\sqrt{1 - y} 1 1 d y = \\int^{d_{x}}",
+      "correct": false,
+      "ms": 38.335,
+      "symbol_correct": 16,
+      "symbol_total": 16,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\int \\frac{1}{y} + \\frac{1}{1 - y}^{d} y = \\int^{d_{x}}",
+      "uncertain": true,
+      "strokes": 23
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/expressmatch/85_herbert.inkml",
+      "categories": [
+        "fraction",
+        "superscript"
+      ],
+      "target": "( a \\frac{1 - t^{2}}{1 + t^{2}} , \\frac{2 b t}{1 + t^{2}} )",
+      "prediction": "(^{a} \\frac{1 -}{1 +} \\frac{t^{2} \\sin}{. 1 + t}_{2} )",
+      "correct": false,
+      "ms": 47.926,
+      "symbol_correct": 20,
+      "symbol_total": 21,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "(^{a} \\frac{1 - t^{2}}{1 + t^{2}}_{,} \\frac{2 b t}{1 + t}_{2} )",
+      "uncertain": true,
+      "strokes": 27
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/expressmatch/110_user0.inkml",
+      "categories": [
+        "fraction"
+      ],
+      "target": "\\frac{1}{\\frac{1}{2} ( \\frac{1}{a} + \\frac{1}{b} )} = \\frac{2 a b}{a + b}",
+      "prediction": "\\frac{1}{t t^{1 +} \\frac{1}{b} )} a \\frac{2 a b}{a + b}",
+      "correct": false,
+      "ms": 48.009,
+      "symbol_correct": 21,
+      "symbol_total": 22,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{1}{- 1 (^{- 1} + - 1 )} 2 a b = \\frac{2 a b}{a + b}",
+      "uncertain": true,
+      "strokes": 25
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire025-equation036.inkml",
+      "categories": [
+        "root",
+        "superscript"
+      ],
+      "target": "\\sqrt{a^{2}}",
+      "prediction": "\\sqrt{a^{2}}",
+      "correct": true,
+      "ms": 5.835,
+      "symbol_correct": 3,
+      "symbol_total": 3,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "\\sqrt{a^{2}}",
+      "uncertain": false,
+      "strokes": 5
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire013-equation056.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "2^{d} \\alpha",
+      "prediction": "2 d_{\\alpha}",
+      "correct": false,
+      "ms": 2.944,
+      "symbol_correct": 3,
+      "symbol_total": 3,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "2 d_{\\alpha}",
+      "uncertain": false,
+      "strokes": 4
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire025-equation064.inkml",
+      "categories": [
+        "fraction",
+        "superscript"
+      ],
+      "target": "\\frac{d^{2} r}{d t^{2}} = - \\alpha \\frac{r}{r^{3}}",
+      "prediction": "\\frac{d^{2} \\sqrt}{d t} \\ldots^{\\alpha_{-}} i",
+      "correct": false,
+      "ms": 25.198,
+      "symbol_correct": 12,
+      "symbol_total": 14,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{d^{2} r}{d t^{2}}^{=} - \\alpha \\frac{r}{r 3}",
+      "uncertain": true,
+      "strokes": 17
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/2009220-1327-116.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "t ( p^{( ( 7 ) )} )",
+      "prediction": "+ (_{p} m",
+      "correct": false,
+      "ms": 14.351,
+      "symbol_correct": 8,
+      "symbol_total": 9,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "t (_{p} ( ( 7 ) ) )",
+      "uncertain": true,
+      "strokes": 10
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire011-equation032.inkml",
+      "categories": [
+        "integral",
+        "subscript",
+        "superscript"
+      ],
+      "target": "\\int_{- \\infty}^{+ \\infty} p_{X} ( x ) d x = 1",
+      "prediction": "I \\sin^{) d} x = 1",
+      "correct": false,
+      "ms": 29.489,
+      "symbol_correct": 14,
+      "symbol_total": 14,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\int_{-}^{+}_{\\infty}^{\\infty} p_{X} ( x ) d_{x} = 1",
+      "uncertain": true,
+      "strokes": 21
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/expressmatch/73_user0.inkml",
+      "categories": [
+        "fraction",
+        "root",
+        "subscript",
+        "superscript"
+      ],
+      "target": "| \\frac{a x_{0} + b y_{0} + c}{\\sqrt{a^{2} + b^{2}}} |",
+      "prediction": "w \\frac{a x_{0} + b y^{0} + C}{a^{2} + b^{2}}",
+      "correct": false,
+      "ms": 53.241,
+      "symbol_correct": 15,
+      "symbol_total": 18,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "| \\frac{a x_{0} + b y^{0} + c}{\\sqrt{a^{2} + b^{2}}} |",
+      "uncertain": true,
+      "strokes": 24
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire006-equation019.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "c - \\alpha u",
+      "prediction": "c - \\alpha u",
+      "correct": true,
+      "ms": 2.744,
+      "symbol_correct": 4,
+      "symbol_total": 4,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "c - \\alpha u",
+      "uncertain": false,
+      "strokes": 4
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MfrDB/MfrDB3255.inkml",
+      "categories": [
+        "fraction",
+        "root",
+        "superscript"
+      ],
+      "target": "\\sqrt[n]{\\frac{n + 1}{( n - 1 )^{2}}}",
+      "prediction": "n F \\sin n + 1_{2}",
+      "correct": false,
+      "ms": 22.475,
+      "symbol_correct": 12,
+      "symbol_total": 12,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "n \\sqrt{\\frac{n + 1}{( n_{-} 1 )}_{2}}",
+      "uncertain": true,
+      "strokes": 13
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire013-equation040.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "( 1 7 5 \\div ( 1 2 9 + 1 6 3 ) ) \\div 2 8 \\leq 0",
+      "prediction": "\\cos \\div \\cos_{+} 1 6 3 ) ) \\cos_{.} 0",
+      "correct": false,
+      "ms": 45.241,
+      "symbol_correct": 18,
+      "symbol_total": 20,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "( 1 7 5 \\div ( 1 2 9 + 1 6 3 ) ) \\div 2 8 \\leq 0",
+      "uncertain": true,
+      "strokes": 29
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire025-equation025.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "1 6 8 \\pm 1 9 + ( ( 1 1 + 7 8 ) / ( 6 - 1 6 3 ) )",
+      "prediction": "1 6 8 \\pm 1 9 + \\lim_{+} 7 \\sin_{-} 1 6 3 ) )",
+      "correct": false,
+      "ms": 48.825,
+      "symbol_correct": 23,
+      "symbol_total": 24,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "1 6 8 \\pm 1 9 + ( ( 1 1 + 7 8 ) / ( 6_{-} 1 6 3 ) )",
+      "uncertain": true,
+      "strokes": 31
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire009-equation042.inkml",
+      "categories": [
+        "subscript",
+        "superscript"
+      ],
+      "target": "h_{k + q ( k + 1 )}^{2} - p k_{k + q ( k + 1 )}^{2} = ( - 1 )^{q ( k + 1 )}",
+      "prediction": "f_{\\sin}^{2} - \\cos ) - p z^{2} \\sin^{- ( k} + 1 \\ldots_{-}^{1} )^{9} ( \\sin",
+      "correct": false,
+      "ms": 70.266,
+      "symbol_correct": 25,
+      "symbol_total": 33,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "h_{k}^{2} + q ( k_{+} 1 ) - p k_{k}^{2} + q^{(} k_{+} 1 ) = (_{-} 1 )^{q} ( k_{+} 1 )",
+      "uncertain": true,
+      "strokes": 40
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire004-equation063.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "e = 2",
+      "prediction": "e = 8",
+      "correct": false,
+      "ms": 3.071,
+      "symbol_correct": 2,
+      "symbol_total": 3,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "e = 2",
+      "uncertain": true,
+      "strokes": 4
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire004-equation037.inkml",
+      "categories": [
+        "subscript"
+      ],
+      "target": "x_{0} , y_{0} , z_{0}",
+      "prediction": "x . 0",
+      "correct": false,
+      "ms": 9.021,
+      "symbol_correct": 7,
+      "symbol_total": 8,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "x_{0} , y 0 , z_{0}",
+      "uncertain": true,
+      "strokes": 8
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-13.inkml",
+      "categories": [
+        "root",
+        "superscript"
+      ],
+      "target": "\\sqrt{1 + \\sqrt{1 + z^{2}}}",
+      "prediction": "\\ldots - - 1 + 2",
+      "correct": false,
+      "ms": 20.395,
+      "symbol_correct": 8,
+      "symbol_total": 8,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\sqrt{+ \\sqrt{1 + z^{2}}} 1",
+      "uncertain": true,
+      "strokes": 13
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire027-equation046.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "1 8 = 2^{1} 3^{2}",
+      "prediction": "1 \\ldots^{1} 3^{2}",
+      "correct": false,
+      "ms": 9.76,
+      "symbol_correct": 6,
+      "symbol_total": 7,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "1 8 = 2^{1} 3^{2}",
+      "uncertain": true,
+      "strokes": 8
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MfrDB/MfrDB3280.inkml",
+      "categories": [
+        "root"
+      ],
+      "target": "g ( x , y ) = \\sqrt[3]{x - y} + \\sqrt{| x + y |}",
+      "prediction": "g ( . , Y )^{=} 3 \\sqrt{. \\ldots}^{-} \\sqrt{m_{-} Y 1}",
+      "correct": false,
+      "ms": 48.517,
+      "symbol_correct": 12,
+      "symbol_total": 19,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "g ( x_{,} y )^{=} 3 \\sqrt{x^{-} y}^{+} \\sqrt{| x + y |}",
+      "uncertain": true,
+      "strokes": 28
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire010-equation031.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "2 \\neq 0",
+      "prediction": "\\cos",
+      "correct": false,
+      "ms": 4.554,
+      "symbol_correct": 3,
+      "symbol_total": 3,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "2 \\neq 0",
+      "uncertain": true,
+      "strokes": 5
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1331-40.inkml",
+      "categories": [
+        "root"
+      ],
+      "target": "\\sqrt{y}",
+      "prediction": "\\sqrt{y}",
+      "correct": true,
+      "ms": 1.118,
+      "symbol_correct": 2,
+      "symbol_total": 2,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "\\sqrt{y}",
+      "uncertain": false,
+      "strokes": 2
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire025-equation023.inkml",
+      "categories": [
+        "fraction"
+      ],
+      "target": "\\pi = \\frac{2 \\pi}{2}",
+      "prediction": "\\pi \\frac{2 \\pi}{2}",
+      "correct": false,
+      "ms": 15.452,
+      "symbol_correct": 6,
+      "symbol_total": 6,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "\\pi = \\frac{2 \\pi}{2}",
+      "uncertain": false,
+      "strokes": 11
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire025-equation003.inkml",
+      "categories": [
+        "subscript",
+        "sum",
+        "superscript"
+      ],
+      "target": "\\sum_{i = 1}^{6} i^{2} = 1^{2} + 2^{2} + 3^{2} + 4^{2} + 5^{2} + 6^{2}",
+      "prediction": "\\sum_{i = 1}^{6} i \\ldots_{-} 2^{2} + 3^{2} + 4^{2} + 5^{2} + 6^{2}",
+      "correct": false,
+      "ms": 63.579,
+      "symbol_correct": 25,
+      "symbol_total": 25,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "\\sum_{i = 1}^{6} i^{2} = 1^{2} + 2^{2} + 3^{2} + 4^{2} + 5^{2} + 6^{2}",
+      "uncertain": false,
+      "strokes": 37
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/KME1G3_2_sub_22.inkml",
+      "categories": [
+        "fraction",
+        "integral",
+        "limit",
+        "root",
+        "subscript",
+        "superscript"
+      ],
+      "target": "\\lim_{x \\rightarrow \\infty} \\int_{0}^{x} e^{- y^{2}} d y = \\frac{\\sqrt{\\pi}}{2}",
+      "prediction": "\\lim_{)} + ) ( e^{-} 4_{-} \\div \\sqrt",
+      "correct": false,
+      "ms": 39.457,
+      "symbol_correct": 12,
+      "symbol_total": 18,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\lim_{x \\rightarrow \\infty} \\int_{0} x e - y^{2} d_{y} = \\frac{\\sqrt{\\pi}}{2}",
+      "uncertain": true,
+      "strokes": 25
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire003-equation027.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "h ( - r ) = h ( r )",
+      "prediction": "\\sin )_{=} \\sin )",
+      "correct": false,
+      "ms": 14.329,
+      "symbol_correct": 6,
+      "symbol_total": 10,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "h (_{-} r )_{=} h ( r )",
+      "uncertain": true,
+      "strokes": 11
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/2009220-1327-121.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "4",
+      "prediction": "4",
+      "correct": true,
+      "ms": 1.087,
+      "symbol_correct": 1,
+      "symbol_total": 1,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "4",
+      "uncertain": false,
+      "strokes": 2
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1312-31.inkml",
+      "categories": [
+        "fraction",
+        "root",
+        "superscript"
+      ],
+      "target": "\\frac{- b - \\sqrt{b^{2} - 4 a c}}{2 a}",
+      "prediction": "\\frac{- b \\ldots b - \\tan}{2}",
+      "correct": false,
+      "ms": 27.028,
+      "symbol_correct": 13,
+      "symbol_total": 13,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\frac{- b_{-} \\sqrt{b^{2} - 4 a c}}{2 a}",
+      "uncertain": true,
+      "strokes": 15
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire009-equation060.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "1 2 5 + 1 6 \\neq 2 5 4",
+      "prediction": "1 2 \\ldots \\ldots 5 4",
+      "correct": false,
+      "ms": 22.289,
+      "symbol_correct": 10,
+      "symbol_total": 10,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "1 2 5 + 1 6 \\neq 2 5 4",
+      "uncertain": true,
+      "strokes": 16
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire003-equation011.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "1 0^{6 4}",
+      "prediction": "1 0 6 4",
+      "correct": false,
+      "ms": 4.647,
+      "symbol_correct": 4,
+      "symbol_total": 4,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "1 0 6 4",
+      "uncertain": false,
+      "strokes": 5
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/expressmatch/95_herbert.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "b = c sin B = c cos A",
+      "prediction": "b = \\cos B = \\cos A",
+      "correct": false,
+      "ms": 29.351,
+      "symbol_correct": 9,
+      "symbol_total": 9,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "b = c \\sin B = c \\cos A",
+      "uncertain": false,
+      "strokes": 19
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MathBrush/200924-1331-29.inkml",
+      "categories": [
+        "root"
+      ],
+      "target": "\\sqrt{1}",
+      "prediction": "\\sqrt{1}",
+      "correct": true,
+      "ms": 1.304,
+      "symbol_correct": 2,
+      "symbol_total": 2,
+      "grouping_exact": true,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "\\sqrt{1}",
+      "uncertain": false,
+      "strokes": 2
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire001-equation071.inkml",
+      "categories": [
+        "superscript"
+      ],
+      "target": "a x^{2} + 2 b x + c = 0",
+      "prediction": "a x ._{\\ldots} - 0",
+      "correct": false,
+      "ms": 19.67,
+      "symbol_correct": 10,
+      "symbol_total": 11,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "a x 2 + 2 b x + c = 0",
+      "uncertain": true,
+      "strokes": 15
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire006-equation062.inkml",
+      "categories": [
+        "subscript",
+        "superscript"
+      ],
+      "target": "a^{n} = - p_{n - 1} a^{n - 1} b + \\ldots + p_{0} b^{n}",
+      "prediction": "a n - \\ldots p - 1 a^{n} - 1 b + \\ldots + p^{0} b^{n}",
+      "correct": false,
+      "ms": 37.767,
+      "symbol_correct": 20,
+      "symbol_total": 20,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "a n = - p^{n} - 1 a^{n} - 1 b + \\ldots + p^{0} b^{n}",
+      "uncertain": false,
+      "strokes": 26
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire006-equation045.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "4 0 - ( 1 3 4 - ( 1 4 4 \\div 1 5 4 ) ) \\geq - 9 3",
+      "prediction": "4 0^{-} \\cos^{-} \\cos \\div 1 5 4 ) \\ldots_{-} 9 3",
+      "correct": false,
+      "ms": 45.775,
+      "symbol_correct": 22,
+      "symbol_total": 22,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": true,
+      "oracle_layout_prediction": "4 0 - ( 1 3 4 - ( 1 4 4 \\div 1 5 4 ) ) \\geq - 9 3",
+      "uncertain": true,
+      "strokes": 31
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/MfrDB/MfrDB2300.inkml",
+      "categories": [
+        "fraction",
+        "root",
+        "superscript"
+      ],
+      "target": "\\sqrt[3]{\\frac{z^{3} + 2}{\\sqrt{z} + 1}}",
+      "prediction": "\\sqrt{a \\sqrt{z}^{+} 1}",
+      "correct": false,
+      "ms": 27.891,
+      "symbol_correct": 10,
+      "symbol_total": 11,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\sqrt{\\frac{z^{3} + 2}{\\sqrt{z}^{+} 1}} 3",
+      "uncertain": true,
+      "strokes": 13
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire003-equation012.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "\\alpha ( t )",
+      "prediction": "\\sin",
+      "correct": false,
+      "ms": 5.111,
+      "symbol_correct": 3,
+      "symbol_total": 4,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\alpha ( t )",
+      "uncertain": true,
+      "strokes": 5
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/HAMEX/formulaire009-equation000.inkml",
+      "categories": [
+        "basic"
+      ],
+      "target": "1 5 7 \\times ( 5 0 \\times ( 8 9 \\times 1 8 ) ) = 1 2 5 7 5 7 0 0",
+      "prediction": "1 s^{-} 7 \\times ( 5 0 x ( 8 9 x 1 \\sin 1 2 5 7 5 7 0 0",
+      "correct": false,
+      "ms": 57.331,
+      "symbol_correct": 23,
+      "symbol_total": 25,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": true,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "1 5 7 \\times ( 5 0 \\times ( 8 9 \\times 1 8 ) ) = 1 2 5 7 5 7 0 0",
+      "uncertain": true,
+      "strokes": 36
+    },
+    {
+      "id": "CROHME_full_v2/CROHME2013_data/TrainINKML/KAIST/TrainData1_4_sub_9.inkml",
+      "categories": [
+        "function",
+        "superscript"
+      ],
+      "target": "\\sin^{2} \\theta + \\cos^{2} \\theta = 1",
+      "prediction": "\\sin^{2} \\theta + \\cos v_{-} 1",
+      "correct": false,
+      "ms": 29.964,
+      "symbol_correct": 8,
+      "symbol_total": 9,
+      "grouping_exact": false,
+      "oracle_label_layout_correct": false,
+      "oracle_group_correct": false,
+      "oracle_layout_prediction": "\\sin^{2} \\theta + \\cos^{2} \\theta^{=} 1",
+      "uncertain": true,
+      "strokes": 18
+    }
+  ]
+}

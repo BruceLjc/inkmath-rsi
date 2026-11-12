@@ -1,0 +1,52 @@
+{
+  "health": {
+    "status": "ready",
+    "model": "v4",
+    "parameters": 300298,
+    "input": "stroke coordinates",
+    "max_strokes": 128,
+    "max_points": 12000,
+    "accuracy_guaranteed": false
+  },
+  "rejection_checks": [
+    {
+      "case": "oversize",
+      "status": 413,
+      "round_trip_ms": 0.6114593707025051
+    },
+    {
+      "case": "wrong_media",
+      "status": 415,
+      "round_trip_ms": 0.43845828622579575
+    },
+    {
+      "case": "broken_json",
+      "status": 400,
+      "round_trip_ms": 0.4103751853108406
+    }
+  ],
+  "concurrency": [
+    {
+      "task_id": "concurrent-0",
+      "status": 429,
+      "round_trip_ms": 13.574415817856789
+    },
+    {
+      "task_id": "concurrent-1",
+      "status": 429,
+      "round_trip_ms": 11.664042249321938
+    },
+    {
+      "task_id": "concurrent-2",
+      "status": 429,
+      "round_trip_ms": 14.155082870274782
+    },
+    {
+      "task_id": "concurrent-3",
+      "status": 200,
+      "round_trip_ms": 122.44800012558699
+    }
+  ],
+  "all_concurrent_calls_returned": true,
+  "process_reaped": true
+}
